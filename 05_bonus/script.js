@@ -5,7 +5,8 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
-const name = 'Mario';
+//todo modificata la costante "Mario" perchè quando la richiamavo in fondo era deprecata... ricordarsi di chiedere ulteriori spiegazioni
+const userName = 'Mario';
 const whatTimeIsIt = prompt("What time is it? (e.g. 12.35 p.m.)", "13.05 p.m." );
 
 
@@ -28,7 +29,7 @@ function GreetingBasedOnTime(user, time) {
 
 
 // Invoca la funzione qui e stampa il risultato in console
-const GreetOntime = GreetingBasedOnTime(name, whatTimeIsIt)
+const GreetOntime = GreetingBasedOnTime(userName, whatTimeIsIt)
 console.log(GreetOntime)
 
 
