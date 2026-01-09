@@ -14,7 +14,7 @@ const whatTimeIsIt = prompt("What time is it? (e.g. 12.35 p.m.)", "13.05 p.m." )
 //! TRADITIONAL FUNCTION
 
 function GreetingBasedOnTime(user, time) {
-    const whatHour = parseInt(time)
+    const whatHour = parseFloat(time)
     if (whatHour <= 13.00) {
         return `good morning ${user}`
     }
