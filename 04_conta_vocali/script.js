@@ -6,7 +6,14 @@ const typeOfVowels = ["a", "e", "i", "o", "u"];
 // Dichiara la funzione qui.
 
 //! FUNZIONE TRADIZIONALE
-
+/**
+ *todo      Funzione che data una stringa ed un array di vocali ritorna il numero di vocali presenti all'interno della stringa fornitogli
+            definita la variabile con let perchè deve modificarsi ad ogni ciclo aumentando
+            Utilizzo il doppio ciclo prendendo col ciclo esterno una lettera e con quello interno controllo se quella lettera coincide con una delle vocali
+ * @param {string} term 
+ * @param {string[]} vocoidList 
+ * @returns 
+ */
 function vowelsCounter(term, vocoidList) {
   let vocoidCounter = 0;
   for (const char of term) {
