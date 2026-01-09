@@ -3,9 +3,17 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
+/**
+ *  Funzione che dato un array passatogli restituisce un array con le iniziali delle parole dell'array fornito
+ *  @param {string[]} list 
+ *  le stringhe possono essere trattate quasi come se fossero array di caratteri. Aggiungendo un secondo [0], stai chiedendo il carattere alla posizione 0 della stringa appena trovata. 
+    se list[i] è "Mario", allora list[i][0] è "M"
+ *? initial.push(list[i][0]) => modo per accedere alla prima lettera
+ *  @returns {string[]}
+ */
 function initialWordsTaker(list) {
   const initial = [];
-  for (let i = 0; i < names.length; i++) {
+  for (let i = 0; i < list.length; i++) {
     initial.push(list[i][0]);
   }
   return initial;
