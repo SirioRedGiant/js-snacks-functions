@@ -7,7 +7,7 @@ const character = "A";
 //! FUNZIONE TRADIZIONALE
 /**
  *todo      FUNZIONE CHE DATO UN ARRAY E UNA LETTERA RESTITUISCE UN ARRAY CONTENENTE STRINGHE CHE INIZIANO CON LO STESSO CARATTERE
-            Nel ciclo controllo che il carattere dato "firstCharacter" sia identico al carattere della stringa fornito. Se è identico lo aggiungo alla nuova lista "initial"
+ **         Nel ciclo controllo che il carattere dato "firstCharacter" sia identico al carattere della stringa fornito. Se è identico lo aggiungo alla nuova lista "initial"
  *          @param {string[]} list 
  *          @param {string} firstCharacter 
  *          @returns {string[]}
@@ -21,8 +21,28 @@ function wordInitialComparator(list, firstCharacter) {
   }
   return initial;
 }
+
+
+//! ARROW FUNCTION
+// /**
+//  *todo      FUNZIONE CHE DATO UN ARRAY E UNA LETTERA RESTITUISCE UN ARRAY CONTENENTE STRINGHE CHE INIZIANO CON LO STESSO CARATTERE 
+//  **         Nel ciclo controllo che il carattere dato "firstCharacter" sia identico al carattere della stringa fornito. Se è identico lo aggiungo alla nuova lista "initial"
+//  ?          @param {string[]} list 
+//  ?          @param {string} firstCharacter 
+//  */
+//^ const wordInitialComparator = (list, firstCharacter) => {
+//^     const sameInitial = [];
+//^   for (let i = 0; i < list.length; i++) {
+//^     if (firstCharacter === list[i][0]) {
+//^       sameInitial.push(list[i]);
+//^     }
+//^ }
+//^ return sameInitial
+//^ }
+
+
 // Invoca la funzione qui e stampa il risultato in console
-const initials = wordInitialComparator(names, character);
-console.log(initials);
+const sameInitials = wordInitialComparator(names, character);
+console.log(sameInitials);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
