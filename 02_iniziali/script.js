@@ -24,25 +24,25 @@ function initialWordsTaker(arraysString) {
 }
 
 //!FUNZIONE MODERNA => arrow function
-/**
- *todo  Funzione che dato un array passatogli restituisce un array con le iniziali delle parole dell'array fornito
- *      @param {string[]} arraysString
- **      Qui utilizzo il ciclo "for....of" per ogni iterazione:
- *          È l'equivalente del for name in names: di Python.
- *          La funzione prende un elemento dall'array arraysString
- *          E lo assegna temporaneamente alla variabile locale arrayString
- **      Estrazione carattere e aggiunta alla nuova lista:
- *          arrayString[0]: Accede al primo carattere della stringa corrente (posizione 0)
- *          .push(...): Prende quel carattere e lo aggiunge alla fine dell'array INITIAL
- *      @returns {string[]}
- */
-const initialWordsTaker = (arraysString) => {
-  const initial = [];
-  for (const arrayString of arraysString) {
-    initial.push(arrayString[0]);
-  }
-  return initial;
-};
+// /**
+//  *todo  Funzione che dato un array passatogli restituisce un array con le iniziali delle parole dell'array fornito
+//  *      @param {string[]} arraysString
+//  ?       Qui utilizzo il ciclo "for....of" per ogni iterazione:
+//  *          È l'equivalente del for name in names: di Python.
+//  *          La funzione prende un elemento dall'array arraysString
+//  *          E lo assegna temporaneamente alla variabile locale arrayString
+//  ?       Estrazione carattere e aggiunta alla nuova lista:
+//  *          arrayString[0]: Accede al primo carattere della stringa corrente (posizione 0)
+//  *          .push(...): Prende quel carattere e lo aggiunge alla fine dell'array INITIAL
+//  *      @returns {string[]}
+//  */
+//^   const initialWordsTaker = (arraysString) => {
+//^     const initial = [];
+//^     for (const arrayString of arraysString) {
+//^       initial.push(arrayString[0]);
+//^     }
+//^     return initial;
+//^   };
 // Invoca la funzione qui e stampa il risultato in console
 const initials = initialWordsTaker(names);
 console.log(initials);
