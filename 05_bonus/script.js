@@ -13,7 +13,13 @@ const whatTimeIsIt = prompt("What time is it? (e.g. 12.35 p.m.)", "13.05 p.m." )
 // Dichiara la funzione qui.
 
 //! TRADITIONAL FUNCTION
-
+/**
+ *todo      Function that, given a name and a time, returns a greeting suitable for the given time
+            After defining a constant "whatHour" in decimal, I return the greeting appropriate to the time of day
+ *          @param {string} user 
+ *          @param {number} time 
+ *          @returns {string}
+ */
 function GreetingBasedOnTime(user, time) {
     const whatHour = parseFloat(time)
     if (whatHour <= 13.00) {
