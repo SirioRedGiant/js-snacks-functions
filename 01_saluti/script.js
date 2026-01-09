@@ -15,9 +15,9 @@ function greeter(name) {
 
 /**
  *! FUNZIONE MODERNA
- * todo l'uso di ${name} sostituisce la concatenzione classica il RETURN è implicito nelle arrow function con una sola riga di codice, si possono omettere anche le parentesi graffe 
+ *  todo l'uso di ${name} sostituisce la concatenzione classica il RETURN è implicito nelle arrow function con una sola riga di codice, si possono omettere anche le parentesi graffe 
 
- *? const greeter = (name) => return `Ciao ${name} è un piacere averti qui!`
+ *? const greeter = (name) => `Ciao ${name} è un piacere averti qui!`
 */
 
 // Invoca la funzione qui e stampa il risultato in console
