@@ -7,7 +7,8 @@ e buonasera se è sera (oltre le 17)
 
 //todo modificata la costante "Mario" perchè quando la richiamavo in fondo era deprecata... ricordarsi di chiedere ulteriori spiegazioni
 const userName = 'Mario';
-const whatTimeIsIt = prompt("What time is it? (e.g. 12.35 p.m.)", "13.05 p.m." );
+// utilizzo l'orario italiano per comodità di ragionamento
+const whatTimeIsIt = prompt("What time is it? (use the 24h format, e.g. 13.05)", "13.05");
 
 
 // Dichiara la funzione qui.
@@ -17,10 +18,10 @@ const whatTimeIsIt = prompt("What time is it? (e.g. 12.35 p.m.)", "13.05 p.m." )
  *todo      Function that, given a name and a time, returns a greeting suitable for the given time
             After defining a constant "whatHour" in decimal, I return the greeting appropriate to the time of day
  *          @param {string} user 
- *          @param {number} time 
+ *          @param {string} time 
  *          @returns {string}
  */
-function GreetingBasedOnTime(user, time) {
+function greetingBasedOnTime(user, time) {
     const whatHour = parseFloat(time)
     if (whatHour <= 13.00) {
         return `good morning ${user}`
