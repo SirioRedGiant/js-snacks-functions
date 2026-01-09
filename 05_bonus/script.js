@@ -25,7 +25,7 @@ function GreetingBasedOnTime(user, time) {
     if (whatHour <= 13.00) {
         return `good morning ${user}`
     }
-    else if (whatHour >= 13.00 && whatHour <= 17.00) {
+    else if (whatHour > 13.00 && whatHour <= 17.00) {
         return `good afternoon ${user}`
     }
     else {
