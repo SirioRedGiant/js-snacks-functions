@@ -6,10 +6,12 @@ e buonasera se è sera (oltre le 17)
 */
 
 //todo modificata la costante "Mario" perchè quando la richiamavo in fondo era deprecata... ricordarsi di chiedere ulteriori spiegazioni
-const userName = 'Mario';
+const userName = "Mario";
 // utilizzo l'orario italiano per comodità di ragionamento
-const whatTimeIsIt = prompt("What time is it? (use the 24h format, e.g. 13.05)", "13.05");
-
+const whatTimeIsIt = prompt(
+  "What time is it? (use the 24h format, e.g. 13.05)",
+  "13.05"
+);
 
 // Dichiara la funzione qui.
 
@@ -22,22 +24,34 @@ const whatTimeIsIt = prompt("What time is it? (use the 24h format, e.g. 13.05)",
  *          @returns {string}
  */
 function greetingBasedOnTime(user, time) {
-    const whatHour = parseFloat(time)
-    if (whatHour <= 13.00) {
-        return `good morning ${user}`
-    }
-    else if (whatHour > 13.00 && whatHour <= 17.00) {
-        return `good afternoon ${user}`
-    }
-    else {
-        return `good evening ${user}`
-    }
+  const whatHour = parseFloat(time);
+  if (whatHour <= 13.0) {
+    return `good morning ${user}`;
+  } else if (whatHour > 13.0 && whatHour <= 17.0) {
+    return `good afternoon ${user}`;
+  } else {
+    return `good evening ${user}`;
+  }
 }
 
+//! ARROW FUNCTION
+/**
+ *todo      Function that, given a name and a time, returns a greeting suitable for the given time
+ *          @param {string} user
+ *          @param {string} time
+ *          @returns {string}
+ */
+//^   const greetingBasedOnTime = (user, time) => {
+//^     const whatHour = parseFloat(time);
+//^   
+//^     if (whatHour <= 13.0) return `Buongiorno ${user}`;
+//^     if (whatHour <= 17.0) return `Buon pomeriggio ${user}`;
+//^   
+//^     return `Buonasera ${user}`;
+//^   };
 
 // Invoca la funzione qui e stampa il risultato in console
-const GreetOntime = GreetingBasedOnTime(userName, whatTimeIsIt)
-console.log(GreetOntime)
-
+const greetOntime = greetingBasedOnTime(userName, whatTimeIsIt);
+console.log(greetOntime);
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
