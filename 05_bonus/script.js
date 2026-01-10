@@ -25,6 +25,9 @@ const whatTimeIsIt = prompt(
  */
 function greetingBasedOnTime(user, time) {
   const whatHour = parseFloat(time);
+  if (isNaN(whatHour) || whatHour < 0 || whatHour > 24) {
+    return `Ciao ${user}, hai inserito un ora non supportata. Ricarica la pagina se vuoi presentarti al meglio.`;
+  }
   if (whatHour <= 13.0) {
     return `good morning ${user}`;
   } else if (whatHour > 13.0 && whatHour <= 17.0) {
@@ -41,14 +44,15 @@ function greetingBasedOnTime(user, time) {
  *          @param {string} time
  *          @returns {string}
  */
-//^   const greetingBasedOnTime = (user, time) => {
-//^     const whatHour = parseFloat(time);
-//^   
-//^     if (whatHour <= 13.0) return `Buongiorno ${user}`;
-//^     if (whatHour <= 17.0) return `Buon pomeriggio ${user}`;
-//^   
-//^     return `Buonasera ${user}`;
-//^   };
+//^ const greetingBasedOnTime = (user, time) => {
+//^   const whatHour = parseFloat(time);
+//^   if (isNaN(whatHour) || (whatHour < 0) || (whatHour > 24)) {
+//^     return `Ciao ${user}, hai inserito un ora non supportata. Ricarica la pagina se vuoi presentarti al meglio.`;
+//^   }
+//^   if (whatHour <= 13.0) return `Buongiorno ${user}`;
+//^   if (whatHour <= 17.0) return `Buon pomeriggio ${user}`//^ 
+//^   return `Buonasera ${user}`;
+//^ };
 
 // Invoca la funzione qui e stampa il risultato in console
 const greetOntime = greetingBasedOnTime(userName, whatTimeIsIt);
